@@ -14,53 +14,50 @@ $(document).ready(function () {
     $(".header-slider").slick({
       arrow: true,
       dots: false,
-      rtl: true, 
+      rtl: true,
     });
   }
 
-  if($(".watch_now_section_slider").length){
+  if ($(".watch_now_section_slider").length) {
     $(".watch_now_section_slider").slick({
       arrow: true,
       dots: false,
-      rtl: true, 
-      cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+      rtl: true,
+      cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
     });
   }
 
-  // if ($(".latest-news-slider-wrapper").length) {
-  //   $(".latest-news-slider-wrapper").slick({
-  //     rtl: true,
-  //     slidesToShow: 4,
-  //     arrows: false,
-  //     slidesToScroll: 1,
-  //     infinite: true,
-  //     autoplay: true,
-  //     autoplaySpeed: 2000,
-  //     responsive: [
-  //       {
-  //         breakpoint: 1024,
-  //         settings: {
-  //           slidesToShow: 3,
-  //           slidesToScroll: 1,
-  //           infinite: true,
-  //           dots: false,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 991,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 600,
-  //         settings: {
-  //           slidesToShow: 1.4,
-  //         },
-  //       },
-  //     ],
-  //   });
-  // }
+  if ($(".services-slider").length) {
+    $(".services-slider").slick({
+      slidesToShow: 3.4,
+      rtl: currentDir == "rtl" ? true : false,
+      slidesToScroll: 1,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2.5,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.4,
+          },
+        },
+      ],
+    });
+  }
 
   $(".middle-header #nav-icon1").click(function () {
     // $(this).addClass("open");
@@ -95,7 +92,6 @@ $(document).ready(function () {
     new WOW().init();
   }
 
-
   if ($(".watch_video_scrollable".length)) {
     $(".watch_video_scrollable").mCustomScrollbar({
       theme: "dark",
@@ -104,9 +100,6 @@ $(document).ready(function () {
       mouseWheel: { preventDefault: true },
     });
   }
-
-  
-
 });
 
 $(window).on("load", function () {
