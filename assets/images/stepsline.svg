@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1239.321" height="110.973" viewBox="0 0 1239.321 110.973">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fed73c"/>
+      <stop offset="1" stop-color="#f2a029"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.004" stop-color="#9d5ad5"/>
+      <stop offset="0.996" stop-color="#00a8cf"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1" y1="0.5" x2="0" y2="0.5" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="-0.033" x2="0.5" y2="0.57" gradientUnits="objectBoundingBox">
+      <stop offset="0.017" stop-color="#f2c129"/>
+      <stop offset="0.537" stop-color="#f2b129"/>
+      <stop offset="1" stop-color="#f2a029"/>
+    </linearGradient>
+    <filter id="C" x="232.063" y="69.355" width="24" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#cbccc4" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-5" x1="0.5" y1="-0.047" x2="0.5" y2="0.74" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ba73f5"/>
+      <stop offset="0.276" stop-color="#ac67e6"/>
+      <stop offset="0.654" stop-color="#a15dd9"/>
+      <stop offset="1" stop-color="#9d5ad5"/>
+    </linearGradient>
+    <filter id="B" x="617.646" y="69.355" width="24" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#cbccc4" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-6" x1="0.5" y1="-0.14" x2="0.5" y2="0.753" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#18c4ed"/>
+      <stop offset="0.167" stop-color="#11bce5"/>
+      <stop offset="0.64" stop-color="#04add4"/>
+      <stop offset="1" stop-color="#00a8cf"/>
+    </linearGradient>
+    <filter id="A" x="1005.795" y="69.355" width="26" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-color="#cbccc4" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_177408" data-name="Group 177408" transform="translate(4024.121 16646.014)">
+    <g id="Group_177308" data-name="Group 177308" transform="translate(-3929.194 -16646.014)">
+      <path id="Path_41247" data-name="Path 41247" d="M113.883,318.069c-8.93,0-13.839-3.657-13.839-4.868s4.909-4.87,13.839-4.87,13.841,3.657,13.841,4.87S122.816,318.069,113.883,318.069Z" transform="translate(35.192 -308.219)" fill="#fed73c" fill-rule="evenodd"/>
+      <g id="Group_177307" data-name="Group 177307" transform="translate(0 1.258)">
+        <path id="Path_41248" data-name="Path 41248" d="M466.033,308.92H116.127a5.045,5.045,0,0,1,2.114,3.721,4.863,4.863,0,0,1-1.878,3.5H465.8a4.858,4.858,0,0,1-1.881-3.5A5.045,5.045,0,0,1,466.033,308.92Z" transform="translate(50.391 -308.92)" fill="url(#linear-gradient)"/>
+        <path id="Path_41249" data-name="Path 41249" d="M257.076,308.92H40.722l-10.207,7.22H256.808a4.714,4.714,0,0,1-2.136-3.5C254.672,311.324,255.536,310.07,257.076,308.92Z" transform="translate(-125.442 -308.92)" fill="#fed73c"/>
+        <path id="Path_41250" data-name="Path 41250" d="M632.735,307.92H288.753a5.066,5.066,0,0,1,2.078,3.721,4.889,4.889,0,0,1-1.847,3.5H632.506a4.893,4.893,0,0,1-1.849-3.5A5.076,5.076,0,0,1,632.735,307.92Z" transform="translate(265.935 -307.92)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_41272" data-name="Path 41272" d="M288.753,307.92h200.3a6.616,6.616,0,0,0-1.21,3.722,6.537,6.537,0,0,0,1.075,3.5H288.886a6.539,6.539,0,0,0,1.077-3.5A6.631,6.631,0,0,0,288.753,307.92Z" transform="translate(655.343 -307.92)" fill="url(#linear-gradient-3)"/>
+      </g>
+      <ellipse id="Ellipse_852" data-name="Ellipse 852" cx="13.839" cy="4.869" rx="13.839" ry="4.869" transform="translate(908.82 0.111)" fill="#00a8cf"/>
+      <path id="Path_41251" data-name="Path 41251" d="M280.51,318.012c-8.93,0-13.839-3.657-13.839-4.87s4.909-4.868,13.839-4.868,13.841,3.657,13.841,4.868S289.441,318.012,280.51,318.012Z" transform="translate(255.121 -308.273)" fill="#9d5ad5" fill-rule="evenodd"/>
+    </g>
+    <g id="Group_177310" data-name="Group 177310" transform="translate(-3804.045 -16619)">
+      <line id="Line_521" data-name="Line 521" y1="27.23" transform="translate(24.131 0)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="0.4 4"/>
+      <g id="Group_177309" data-name="Group 177309" transform="translate(0 35.335)">
+        <circle id="Ellipse_853" data-name="Ellipse 853" cx="24.313" cy="24.313" r="24.313" fill="url(#linear-gradient-4)"/>
+        <g transform="matrix(1, 0, 0, 1, -220.08, -62.35)" filter="url(#C)">
+          <text id="C-2" data-name="C" transform="translate(233.06 92.36)" fill="#fff" font-size="23" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">C</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Group_177314" data-name="Group 177314" transform="translate(-3418.462 -16619)">
+      <line id="Line_522" data-name="Line 522" y1="27.23" transform="translate(24.131 0)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="0.4 4"/>
+      <g id="Group_177313" data-name="Group 177313" transform="translate(0 35.335)">
+        <circle id="Ellipse_854" data-name="Ellipse 854" cx="24.313" cy="24.313" r="24.313" fill="url(#linear-gradient-5)"/>
+        <g transform="matrix(1, 0, 0, 1, -605.66, -62.35)" filter="url(#B)">
+          <text id="B-2" data-name="B" transform="translate(618.65 92.36)" fill="#fff" font-size="23" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">B</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Group_177318" data-name="Group 177318" transform="translate(-3029.313 -16619)">
+      <line id="Line_523" data-name="Line 523" y1="27.23" transform="translate(24.131 0)" fill="none" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="0.4 4"/>
+      <g id="Group_177317" data-name="Group 177317" transform="translate(0 35.335)">
+        <circle id="Ellipse_855" data-name="Ellipse 855" cx="24.313" cy="24.313" r="24.313" fill="url(#linear-gradient-6)"/>
+        <g transform="matrix(1, 0, 0, 1, -994.81, -62.35)" filter="url(#A)">
+          <text id="A-2" data-name="A" transform="translate(1007.8 92.36)" fill="#fff" font-size="23" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">A</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

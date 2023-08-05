@@ -1024,6 +1024,7 @@ p {
 .work-under {
   padding: 65px 0;
   position: relative;
+  overflow: hidden;
 }
 .work-under::after {
   content: url("../images/underworkleftside.svg");
@@ -1042,9 +1043,8 @@ p {
 .work-under .work-under-cont h5::before {
   content: url("../images/workunderbefore.svg");
   position: absolute;
-  top: 50%;
+  top: -60px;
   right: -30px;
-  transform: translate(0, -50%);
   z-index: -1;
 }
 .work-under .work-under-cont p {
@@ -1651,10 +1651,7 @@ p {
 }
 .service-header .card-img {
   height: auto;
-  border-bottom-left-radius: 292px;
-}
-.service-header .card-img img {
-  border-bottom-left-radius: 292px;
+  text-align: center;
 }
 .service-header .header-content {
   position: relative;
@@ -1748,9 +1745,354 @@ p {
 }
 
 /* ================================================================ */
+.donation-card .card-img {
+  height: 275px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+}
+.donation-card .card-img::after {
+  content: "";
+  background-color: rgba(0, 112, 181, 0.68);
+}
+.donation-card .card-title {
+  position: relative;
+  z-index: 3;
+}
+.donation-card .card-title h5 {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: sommedium;
+  margin-right: 10px;
+}
+.donation-card .card-text {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.donation-card.second-card .card-img::after {
+  background-color: rgba(10, 43, 83, 0.68);
+}
+.donation-card.third-card .card-img::after {
+  background-color: rgba(62, 120, 80, 0.68);
+}
+
+.if-intersted {
+  background-image: url("../images/ifinterste.png");
+  padding: 42px 85px 82px 85px;
+  border-radius: 30px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.if-intersted h5 {
+  font-size: 3rem;
+  color: #0070b5;
+  font-family: somsemibold;
+  margin-bottom: 80px;
+  position: relative;
+}
+.if-intersted h5::before {
+  content: url("../images/ifinterstd.svg");
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  z-index: -1;
+}
+.if-intersted ul li a,
+.if-intersted ul li h6 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  color: #000000;
+}
+.if-intersted ul li h6 {
+  margin-left: 45px;
+}
+.if-intersted ul li h6 i {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.if-intersted ul li span {
+  color: #000000;
+  margin-left: 10px;
+  font-size: 1.6rem;
+}
+.if-intersted ul li .link a {
+  margin-left: 10px;
+}
+
 /* ================================================================ */
+.photo-gallery {
+  padding: 90px 0;
+}
+
+.gallery-card {
+  background-color: #e6e6e6;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-card .card-img {
+  height: 260px;
+  border-radius: 16px;
+  display: block;
+  overflow: hidden;
+}
+.gallery-card .card-img img {
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-card:hover .card-img img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.gallery-video-card .card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-video-card .play {
+  position: relative;
+  z-index: 8;
+  width: 70px;
+  height: 70px;
+  background-color: #f58737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.gallery-video-card .play .borderoutline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #0070b5;
+}
+
 /* ================================================================ */
+.where-services-go {
+  position: relative;
+  height: 900px;
+}
+.where-services-go h5 {
+  font-size: 3.3rem;
+  color: #0070b5;
+  font-family: somsemibold;
+  width: 20%;
+  text-align: center;
+  position: relative;
+  padding-top: 40px;
+  position: relative;
+  z-index: 5;
+}
+.where-services-go h5::before {
+  content: url("../images/whewgo.svg");
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  z-index: -1;
+}
+.where-services-go .places-img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.where-services-go .places-img .card-img,
+.where-services-go .places-img img {
+  height: 100%;
+}
+
+.who-us-content {
+  position: relative;
+  height: 706px;
+}
+.who-us-content .card-img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+}
+.who-us-content .who-wrap {
+  padding-top: 90px;
+}
+.who-us-content .who-wrap h5 {
+  font-size: 3.3rem;
+  color: #0070b5;
+  font-family: somsemibold;
+  position: relative;
+}
+.who-us-content .who-wrap h5::before {
+  content: url("../images/ifinterstd.svg");
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  z-index: -1;
+}
+.who-us-content .who-us-content-pargraph {
+  background-color: rgba(10, 43, 83, 0.87);
+  border-top-left-radius: 285px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 102px 70px 41px 80px;
+  width: 833px;
+  max-width: 100%;
+  z-index: 5;
+}
+.who-us-content .who-us-content-pargraph p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+
+.main-department {
+  background-image: url("../images/maindepartmentbg.png");
+  padding: 90px;
+}
+.main-department .head {
+  text-align: center;
+}
+.main-department .head h5 {
+  font-size: 3.5rem;
+  color: #0070b5;
+  font-family: somsemibold;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.main-department .head h5::before {
+  content: url("../images/ifinterstd.svg");
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  z-index: -1;
+}
+.main-department .head p {
+  font-size: 2rem;
+  font-family: somsemibold;
+}
+.main-department .steps-line {
+  margin-top: 100px;
+  position: absolute;
+  left: 49%;
+  transform: translate(-50%, 0);
+  width: 85%;
+}
+.main-department .steps-line img {
+  width: 100%;
+}
+.main-department .descripe {
+  width: 320px;
+  margin: auto;
+  text-align: center;
+  margin-top: 250px;
+}
+.main-department .descripe h5 {
+  font-size: 2rem;
+  color: #06afd7;
+  font-family: somsemibold;
+  margin-bottom: 20px;
+}
+.main-department .descripe img {
+  width: 100px;
+}
+.main-department .descripe.descripe2 h5 {
+  color: #af69e9;
+}
+.main-department .descripe.descripe3 h5 {
+  color: #f2ba29;
+}
+
+.department-card {
+  background-color: #fff;
+  width: 320px;
+  margin: auto;
+  padding: 52px 14px;
+  margin-top: 41px;
+  padding-bottom: 140px;
+  border: 1px solid #06afd7;
+  border-radius: 30px;
+  position: relative;
+  min-height: 417px;
+  max-height: 417px;
+}
+.department-card p {
+  font-size: 1.4rem;
+}
+.department-card .step-img {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+}
+.department-card .step-img img {
+  width: 100%;
+}
+.department-card.step2 {
+  border: 1px solid #af69e9;
+}
+.department-card.step3 {
+  border: 1px solid #f2ba29;
+}
+
 /* ================================================================ */
+.quility .head {
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 50px;
+}
+.quility .head p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.quility .head h5 {
+  font-size: 4rem;
+  color: #0070b5;
+  font-family: somsemibold;
+  margin: 0;
+}
+.quility .accordion-item {
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+.quility .accordion-item .accordion-header,
+.quility .accordion-item .accordion-button {
+  background-color: transparent;
+  border: 0 !important;
+}
+.quility .accordion-item .accordion-header:focus,
+.quility .accordion-item .accordion-button:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+.quility .accordion-item .accordion-header span,
+.quility .accordion-item .accordion-button span {
+  font-size: 1.6rem;
+  margin-right: 10px;
+  color: #0070b5;
+  font-family: somsemibold;
+}
+.quility .accordion-item .accordion-header img,
+.quility .accordion-item .accordion-button img {
+  width: 60px;
+}
+.quility .accordion-item .accordion {
+  border-color: transparent !important;
+}
+.quility .accordion-item .accordion-collapse {
+  border: 0;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
@@ -1809,7 +2151,7 @@ footer .footer-links li a {
 
 /* ================================================================ */
 /* Shared styles  */
-.header-section, .tests-section, .our-services, .baby-develope, .statics .statics-wrapper, .what-they-say, .frames, .media-video, .contact_us, .contact_us .contact-info2, .test-page .teste-card, .contact-header, footer {
+.header-section, .tests-section, .our-services, .baby-develope, .statics .statics-wrapper, .what-they-say, .frames, .media-video, .contact_us, .contact_us .contact-info2, .test-page .teste-card, .contact-header, .if-intersted, .main-department, footer {
   background-position: center;
   background-size: cover;
 }
@@ -1819,7 +2161,7 @@ footer .footer-links li a {
   font-weight: 900;
 }
 
-.frames::after, .media-video::after, .contact_us .contact-info2::after {
+.frames::after, .media-video::after, .contact_us .contact-info2::after, .donation-card .card-img::after {
   position: absolute;
   top: 0;
   left: 0;
