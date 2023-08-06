@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
   }
 
-  $(".middle-header #nav-icon1").click(function () {
+  $(".custom-navbar #nav-icon1").click(function () {
     // $(this).addClass("open");
     // $(this).parent().toggleClass("menu_icon-active");
     $(".side-nav").addClass("side-nav-open");
