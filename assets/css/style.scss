@@ -2105,7 +2105,7 @@ p {
 /* ================================================================ */
 .where-services-go {
   position: relative;
-  height: 900px;
+  // height: 750px;
   h5 {
     font-size: 3.3rem;
     color: $mainColor;
@@ -2116,6 +2116,7 @@ p {
     padding-top: 40px;
     position: relative;
     z-index: 5;
+    position: absolute;
     &::before {
       content: url("../images/whewgo.svg");
       position: absolute;
@@ -2126,12 +2127,14 @@ p {
     }
   }
   .places-img {
-    position: absolute;
-    top: 0;
-    height: 100%;
+    // position: absolute;
+    // top: 0;
+    height: auto;
+    width: 100%;
     .card-img,
     img {
       height: 100%;
+      width: 100%;
     }
   }
 }
@@ -2326,7 +2329,56 @@ p {
 
 /* ================================================================ */
 .creators{
-  background-image: url('../images/creators.png');
+  background-image: url('../images/creatorbg.png');
+  @extend %backgroundImage;
+  padding: 58px 0;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(#D8A81F, .63), rgba(#FFE394, .89));
+  }
+  .head{
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    h5{
+      color: $mainColor;
+      font-size: 3.5rem;
+      font-family: somsemibold;
+    }
+  }
+  ul{
+   
+  }
+  .col-lg-6{
+    position: relative;
+  }
+  .create-before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    z-index: 5;
+    img{
+      width: 100%;
+    }
+  }
+  .card-img{
+    position: relative;
+    z-index: 3;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    img{
+      border-radius: 50%;
+    }
+  }
 }
 /* ================================================================ */
 /* ================================================================ */
