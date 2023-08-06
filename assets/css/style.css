@@ -2140,6 +2140,10 @@ p {
   font-size: 2rem;
   z-index: 4;
 }
+.creators ul li .name-top {
+  bottom: unset;
+  top: -50px;
+}
 .creators .mr-auto {
   margin-right: auto;
   margin-bottom: 225px;

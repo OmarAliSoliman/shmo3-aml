@@ -2650,6 +2650,10 @@ p {
         font-size: 2rem;
         z-index: 4;
       }
+      .name-top{
+        bottom: unset;
+        top: -50px;
+      }
     }
   }
 
