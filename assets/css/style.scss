@@ -800,7 +800,6 @@ p {
   //   border: 1px solid rgba(112, 112, 112, 0.24);
   // }
   .watch_now_cards {
-
     // padding: 25px 37px;
     .big_watch {
       .card-img {
@@ -838,7 +837,7 @@ p {
           align-items: center;
           flex-wrap: wrap;
 
-          >div {
+          > div {
             width: 50%;
 
             span {
@@ -885,7 +884,6 @@ p {
 
       .wide_more {
         .time {
-
           span,
           i {
             color: #000;
@@ -957,7 +955,6 @@ p {
       justify-content: space-between;
 
       .time {
-
         span,
         i {
           color: #fff;
@@ -1189,9 +1186,11 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right,
-        rgba(#0a2b53, 1),
-        rgba(#001f46, 0.56));
+    background-image: linear-gradient(
+      to right,
+      rgba(#0a2b53, 1),
+      rgba(#001f46, 0.56)
+    );
   }
 
   h5 {
@@ -1443,14 +1442,17 @@ p {
   &::after {
     content: "";
     @extend %overlay;
-    background-image: linear-gradient(to right,
-        rgba(#d8a81f, 0.98),
-        rgba(#ffe394, 0.74));
+    background-image: linear-gradient(
+      to right,
+      rgba(#d8a81f, 0.98),
+      rgba(#ffe394, 0.74)
+    );
   }
 }
 
 /* ================================================================ */
 .our-services-page {
+  position: relative;
   .section-header {
     justify-content: space-between;
 
@@ -1461,6 +1463,13 @@ p {
         color: $secondColor;
       }
     }
+  }
+
+  .flower{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .our-service-slider-section {
@@ -1479,6 +1488,7 @@ p {
     }
 
     .services-slider {
+      z-index: 5;
       .slick-list {
         padding-top: 100px;
       }
@@ -1827,9 +1837,11 @@ p {
     &::after {
       @extend %overlay;
       content: "";
-      background-image: linear-gradient(to bottom,
-          rgba(#0070b5, 0.91),
-          rgba(#00385b, 0.58));
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#0070b5, 0.91),
+        rgba(#00385b, 0.58)
+      );
       border-top-right-radius: 24px;
       border-bottom-right-radius: 24px;
     }
@@ -1880,7 +1892,13 @@ p {
     @extend %backgroundImage;
     padding: 20px 46px;
     margin-top: 77px;
-
+    position: relative;
+    .testbox-flower{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
     h5 {
       font-size: 1.5rem;
       color: $mainColor;
@@ -1888,6 +1906,77 @@ p {
       span {
         color: $secondColor;
       }
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      // margin: 0 20px;
+      background-color: transparent;
+      width: 100%;
+      border: 0;
+      margin-bottom: 20px;
+      // height: 350px;
+    }
+
+    .card .percent {
+      position: relative;
+    }
+
+    .card svg {
+      position: relative;
+      width: 210px;
+      height: 210px;
+      transform: rotate(-90deg);
+    }
+
+    .card svg circle {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: #f0f0f0;
+      stroke-width: 10;
+      stroke-linecap: round;
+    }
+
+    .card svg circle:last-of-type {
+      stroke-dasharray: 625px;
+      stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+      stroke: $mainColor;
+    }
+
+    .card .number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .card .number h3 {
+      font-weight: 200;
+      font-size: 5.5rem;
+      font-family: sombold;
+      span{
+        font-family: sombold;
+      }
+    }
+
+    .card .number h3 span {
+      font-size: 2rem;
+    }
+
+    .card .title h2 {
+      margin: 25px 0 0;
+    }
+
+    .card:nth-child(1) svg circle:last-of-type {
+      stroke: #f39c12;
+    }
+
+    .card:nth-child(2) svg circle:last-of-type {
+      stroke: #0070B5;
     }
   }
 
@@ -2014,7 +2103,7 @@ p {
     }
   }
 
-  input[type="radio"]:checked~.card-check .smallcircle {
+  input[type="radio"]:checked ~ .card-check .smallcircle {
     background-color: $mainColor;
   }
 }
@@ -2064,6 +2153,7 @@ p {
   .card-img {
     height: auto;
     text-align: center;
+    max-width: 100%;
     // border-bottom-left-radius: 292px;
     // img {
     //   border-bottom-left-radius: 292px;
@@ -2188,7 +2278,8 @@ p {
 }
 
 /* ================================================================ */
-.donation-content-wrapper {}
+.donation-content-wrapper {
+}
 
 .donation-card {
   margin-bottom: 40px;
@@ -2268,7 +2359,6 @@ p {
 
   ul {
     li {
-
       a,
       h6 {
         font-size: 1.6rem;
@@ -2462,6 +2552,7 @@ p {
   @extend %backgroundImage;
   padding: 90px 0;
   overflow: hidden;
+  position: relative;
   .head {
     text-align: center;
 
@@ -2641,9 +2732,11 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to left,
-        rgba(#d8a81f, 0.63),
-        rgba(#ffe394, 0.89));
+    background-image: linear-gradient(
+      to left,
+      rgba(#d8a81f, 0.63),
+      rgba(#ffe394, 0.89)
+    );
   }
 
   .head {
@@ -2752,9 +2845,11 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right,
-        rgba(#263f91, 0.9),
-        rgba(#009cdd, 1));
+    background-image: linear-gradient(
+      to right,
+      rgba(#263f91, 0.9),
+      rgba(#009cdd, 1)
+    );
     content: "";
     left: 0;
     bottom: 0;
@@ -2826,14 +2921,14 @@ footer {
   }
 }
 
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .creators .mr-auto {
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   .creators .mr-auto {
     margin-right: unset;
     margin-left: auto;
@@ -2858,7 +2953,10 @@ footer {
     right: 30px;
   }
 
-  .our-services-page .our-service-slider-section .services-slider .slider-serv-card {
+  .our-services-page
+    .our-service-slider-section
+    .services-slider
+    .slider-serv-card {
     height: 384px;
     min-width: 230px;
     max-width: 230px;
@@ -2867,7 +2965,8 @@ footer {
   .footer-wave {
     bottom: -20px;
   }
-  .department-card, .main-department .descripe{
+  .department-card,
+  .main-department .descripe {
     width: 250px;
   }
 }
@@ -2959,32 +3058,32 @@ footer {
       }
     }
   }
-  .creators ul li .name-top{
+  .creators ul li .name-top {
     position: relative;
     bottom: unset;
     text-align: center;
     top: unset;
   }
-  .creators ul li .name{
+  .creators ul li .name {
     position: relative;
     bottom: unset;
     text-align: center;
   }
-  .creators .card-img{
+  .creators .card-img {
     margin: auto;
     width: 150px;
     height: 150px;
   }
-  .main-department .steps-line{
+  .main-department .steps-line {
     display: none;
   }
-  .department-card{
+  .department-card {
     margin-bottom: 40px;
   }
-  .main-department .descripe{
+  .main-department .descripe {
     margin-top: 50px;
   }
-  .main-department .descripe h5{
+  .main-department .descripe h5 {
     font-size: 1.5rem;
   }
 }
@@ -3057,17 +3156,25 @@ footer {
       width: 50%;
     }
   }
-  .department-card{
+  .department-card {
     width: 300px;
   }
-  .who-us-content .who-us-content-pargraph, .who-us-content .card-img, .where-services-go h5{
+  .who-us-content .who-us-content-pargraph,
+  .who-us-content .card-img,
+  .where-services-go h5 {
     position: relative;
   }
-  .who-us-content{
+  .who-us-content {
     height: auto;
   }
-  .where-services-go h5{
+  .where-services-go h5 {
     width: 100%;
+  }
+  .who-us-content .who-us-content-pargraph{
+    padding-right: 30px;
+  }
+  .where-services-go{
+    overflow: hidden;
   }
 }
 
