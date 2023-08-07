@@ -104,5 +104,5 @@ $(document).ready(function () {
 
 $(window).on("load", function () {
   $("html").removeClass("splash-active");
-  $(".splach").addClass("splashscreen-none");
+  $(".splash").addClass("splashscreen-none");
 });
