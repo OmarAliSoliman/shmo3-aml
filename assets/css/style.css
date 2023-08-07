@@ -359,7 +359,7 @@ p {
   z-index: 9;
   align-items: center;
   /* Icon 1 */
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -1648,6 +1648,7 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 .contact-header .contact-wave {
   position: absolute;
@@ -1672,6 +1673,9 @@ p {
 }
 .service-header .header-content {
   position: relative;
+}
+.service-header .header-content p {
+  width: 90%;
 }
 .service-header::before {
   background-color: rgba(0, 112, 181, 0.9);
@@ -1762,6 +1766,9 @@ p {
 }
 
 /* ================================================================ */
+.donation-card {
+  margin-bottom: 40px;
+}
 .donation-card .card-img {
   height: 275px;
   position: relative;
@@ -1972,7 +1979,8 @@ p {
 
 .main-department {
   background-image: url("../images/maindepartmentbg.png");
-  padding: 90px;
+  padding: 90px 0;
+  overflow: hidden;
 }
 .main-department .head {
   text-align: center;
@@ -2001,9 +2009,9 @@ p {
 .main-department .steps-line {
   margin-top: 100px;
   position: absolute;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, 0);
-  width: 85%;
+  width: 100%;
 }
 .main-department .steps-line img {
   width: 100%;
@@ -2033,6 +2041,7 @@ p {
 .department-card {
   background-color: #fff;
   width: 320px;
+  max-width: 100%;
   margin: auto;
   padding: 52px 14px;
   margin-top: 41px;
@@ -2246,6 +2255,18 @@ footer .footer-links li a {
   color: #fff;
 }
 
+@media (max-width: 1400px) {
+  .creators .mr-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .creators .mr-auto {
+    margin-right: unset;
+    margin-left: auto;
+  }
+}
 @media (max-width: 1024px) {
   html {
     font-size: 14px;
@@ -2268,8 +2289,14 @@ footer .footer-links li a {
   .footer-wave {
     bottom: -20px;
   }
+  .department-card, .main-department .descripe {
+    width: 250px;
+  }
 }
 @media (max-width: 991px) {
+  .menu_icon {
+    display: flex;
+  }
   .header-section .header-slider .card-img {
     width: 350px;
   }
@@ -2306,6 +2333,61 @@ footer .footer-links li a {
   .contact_us .contact-info2 {
     height: 250px;
   }
+  .if-intersted {
+    padding: 42px 35px 82px 35px;
+  }
+  .if-intersted ul {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .if-intersted ul li {
+    margin-bottom: 15px;
+  }
+  .service-header .card-img {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .creators ul {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .creators ul li {
+    width: 25%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .creators ul li .sepr1 {
+    display: none;
+  }
+  .creators ul li .name-top {
+    position: relative;
+    bottom: unset;
+    text-align: center;
+    top: unset;
+  }
+  .creators ul li .name {
+    position: relative;
+    bottom: unset;
+    text-align: center;
+  }
+  .creators .card-img {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+  }
+  .main-department .steps-line {
+    display: none;
+  }
+  .department-card {
+    margin-bottom: 40px;
+  }
+  .main-department .descripe {
+    margin-top: 50px;
+  }
+  .main-department .descripe h5 {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 600px) {
   .watch_now_section .watch_now_cards .big_watch {
@@ -2340,7 +2422,42 @@ footer .footer-links li a {
   .media-video {
     padding: 30px 10px;
   }
+  .baby-develope {
+    padding-top: 115px;
+  }
+  .header-section .header-content h5 {
+    font-size: 4rem;
+  }
+  .contact-header .contact-wave {
+    bottom: -5px;
+  }
+  .if-intersted ul li {
+    flex-wrap: wrap;
+  }
+  .creators ul {
+    flex-wrap: wrap;
+  }
+  .creators ul li {
+    width: 50%;
+  }
+  .department-card {
+    width: 300px;
+  }
+  .who-us-content .who-us-content-pargraph, .who-us-content .card-img, .where-services-go h5 {
+    position: relative;
+  }
+  .who-us-content {
+    height: auto;
+  }
+  .where-services-go h5 {
+    width: 100%;
+  }
 }
+.gallery-header {
+  display: flex;
+  align-items: center;
+}
+
 /* ================================================================ */
 /* Shared styles  */
 .header-section, .tests-section, .our-services, .baby-develope, .statics .statics-wrapper, .what-they-say, .frames, .media-video, .contact_us, .contact_us .contact-info2, .test-page .teste-card, .contact-header, .if-intersted, .main-department, .creators, footer {
