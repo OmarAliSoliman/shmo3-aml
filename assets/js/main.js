@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(".header-slider").slick({
       arrow: true,
       dots: false,
-      rtl: true,
+      rtl: currentDir == "rtl" ? true: false,
     });
   }
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
     $(".watch_now_section_slider").slick({
       arrow: true,
       dots: false,
-      rtl: true,
+      rtl: currentDir == "rtl" ? true: false,
       cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
     });
   }

@@ -582,6 +582,13 @@ p {
   }
 }
 
+.custom-navbar .lang{
+  margin-top: 20px;
+  .nice-select{
+    float: none;
+  }
+}
+
 /* ================================================================ */
 .header-section {
   min-height: 600px;
@@ -1302,7 +1309,7 @@ p {
     background-color: #fff;
     padding: 10px 43px 85px 43px;
     margin-top: 20px;
-
+    min-height: 300px;
     img {
       margin-bottom: 26px;
       margin: auto;
@@ -1312,14 +1319,19 @@ p {
   }
 
   .person-img {
-    position: absolute;
+    position: relative;
     left: 50%;
-    // bottom: -80px;
+    bottom: 80px;
     transform: translate(-50%, 0);
-    bottom: 0;
-
+    text-align: center;
+    margin: auto;
+    .card-img{
+      margin: auto;
+    }
     img {
       border-radius: 50%;
+      display: block;
+      margin: auto;
     }
 
     .card-img {
@@ -2815,6 +2827,14 @@ footer {
   .download {
     position: relative;
     z-index: 4;
+  }
+
+  .download{
+    text-align: center;
+    img{
+      width: 200px;
+      margin: auto;
+    }
   }
 
   .footer-logo {

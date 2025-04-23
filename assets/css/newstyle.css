@@ -1,0 +1,72 @@
+.jobs_form {
+  padding: 100px 0;
+}
+.jobs_form .form-control {
+  border-radius: 7px;
+  background-color: rgba(245, 247, 250, 0.386);
+}
+.jobs_form .form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.jobs_form .form-control {
+  height: 50px;
+  background-color: #f7f7f7;
+  border: 0.5px solid #212c81;
+  border-radius: 10px;
+}
+.jobs_form .form-control::-moz-placeholder {
+  color: #8d8d8d;
+}
+.jobs_form .form-control::placeholder {
+  color: #8d8d8d;
+}
+.jobs_form .form-group {
+  margin-bottom: 20px;
+}
+.jobs_form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+.jobs_form .btn-submit {
+  margin-top: 31px;
+  text-align: left;
+}
+.jobs_form .btn-submit .btn-style {
+  background-color: #263f91;
+  border-radius: 6px;
+  border-color: #263f91;
+}
+.jobs_form .btn-submit .btn-style:hover {
+  color: #263f91;
+  background-color: #fff;
+}
+.jobs_form input[type=file] {
+  line-height: 40px;
+}
+
+.jobs_form_contet {
+  text-align: center;
+}
+.jobs_form_contet .icon {
+  text-align: center;
+}
+.jobs_form_contet .icon img {
+  width: 160px !important;
+  margin: auto;
+}
+.jobs_form_contet p {
+  width: 95%;
+  margin: auto;
+  margin: 15px auto;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1300px) {
+  .custom-navbar .list-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}/*# sourceMappingURL=newstyle.css.map */
